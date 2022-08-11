@@ -1,0 +1,25 @@
+### Create Demo
+POST http://localhost:8080/demo
+Content-Type: application/json
+
+{
+  "value": "Test 123"
+}
+
+
+### Get the first demo by id
+GET http://localhost:8080/demo/2d9bb4bc-5275-440a-b373-7d2b52c9b3d8
+
+### Create second demo
+POST http://localhost:8080/demo
+Content-Type: application/json
+
+{
+  "value": "Test 1234"
+}
+
+### Get all demos by value
+GET http://localhost:8080/demo?value=Test 123
+
+### Get all demos by value spring data
+GET http://localhost:8080/demo/spring-data?value=Test 123
